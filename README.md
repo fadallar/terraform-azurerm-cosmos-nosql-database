@@ -1,0 +1,1 @@
+# terraform-azurerm-cosmos-nosql-database
