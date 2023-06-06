@@ -1,5 +1,5 @@
 variable "database_name" {
-  description = "Specifies the name of the Cosmos DB Mongo Database. Changing this forces a new resource to be created."
+  description = "Specifies the name of the Cosmos DB NoSql Database. Changing this forces a new resource to be created."
   type        = string
 }
 
@@ -26,7 +26,7 @@ variable "throughput" {
 }
 
 variable "max_autoscaling_throughput" {
-  description = "The maximum autoscale throughput of the MongoDB database (RU/s). Must be between 1,000 and 1,000,000. Must be set in increments of 1,000. Conflicts with throughput."
+  description = "The maximum autoscale throughput of the NoSqlDB database (RU/s). Must be between 1,000 and 1,000,000. Must be set in increments of 1,000. Conflicts with throughput."
   type        = number
   default     = null
   validation {
